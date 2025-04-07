@@ -294,7 +294,7 @@ header {
     color: var(--white);
 }
 
-.projectInfo {
+.projectInfo, .Project {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -533,7 +533,7 @@ label {
 }
 
 .userFlow {
-    height: auto;
+    min-height: 100vh;
     padding: 2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -581,6 +581,16 @@ label {
     border-radius: 5px;
 }
 
+.understandingtheUser {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.userCard {
+    max-height: 500px;
+}
+
 .moodboard {
     display: flex;
     justify-content: center;
@@ -596,4 +606,44 @@ label {
 img {
     max-inline-size: 100%;
     block-size: auto;
+}
+
+
+@media screen and (min-width: 40em) {
+    .servicesContainer, .Project, .userFlow .cardContainer {
+        flex-direction: row;
+    }
+
+    .projectInfo {
+        align-items: flex-start;
+    }
+
+    .projectInfo h3, .projectInfo p, .projectInfo span {
+        text-align: left;
+    }
+
+    .clara .projectTitle {
+        flex-direction: row-reverse;
+    }
+
+    .clara .projectDetailsInfo {
+        width: 100%;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+
+    }
+
+    .detailInfo {
+        max-width: 15em;
+    }
+
+    .userCardContainer {
+        height: 600px;
+        width: 100%;
+        overflow: scroll;
+        align-items: flex-start;
+    }
+
+
 }
