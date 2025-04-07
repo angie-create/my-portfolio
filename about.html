@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <a href="./index.html"><img class="logo" src="./img/Logo  AP.png" alt="Angelica Parada Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <a onclick="openNav()" class="menu" href="#"><button class="menuButton">Menu</button></a>
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="" class="close">&times;</a>
+                <div class="overlay-content">
+                    <a href="./index.html">Projects</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <main class="aboutHeader">
+            <header>
+                <h1>Hello, I'm Angie</h1>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="buttons">
+                <a href="./contact.html"><button class="filledButton">Contact me</button></a>
+                <button class="button">Download Resume</button>
+            </div>
+        </main>
+        <section class="myExpertise">
+            <hgroup>
+                <h2>My Expertise</h2>
+                <p>I specialize in a range of design disciplines to deliver comprehensive solutions that make complex problems simple.</p>
+            </hgroup>
+            <div class="expertiseContainer">
+                <div class="experience">
+                    <h4>User Interface Design</h3>
+                    <ul>
+                        <li>Responsive Web Design</li>
+                        <li>Mobile App Design</li>
+                        <li>Design Systems</li>
+                        <li>Interaction Design</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h4>User Experience Design</h3>
+                    <ul>
+                        <li>User Research</li>
+                        <li>Information Architecture</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Usability Testing</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h4>Additional Skills</h3>
+                    <ul>
+                        <li>Frontend Development</li>
+                        <li>Branding & Identity</li>
+                    </ul>
+                    <p>See my work on:</p>
+                    <div class="socialIcons">
+                        <a href="https://dribbble.com/AngiePR"><i class="bi bi-dribbble"></i></a>
+                        <a href="https://www.behance.net/lauraaparada"><i class="bi bi-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="./contact.html"><button class="button">Get in Touch</button></a>
+        </section>
+        <footer>
+            <img class="logo" src="./img/Logo  AP.png" alt="">
+            <h4>Let's connect</h4>
+            <div class="socialIcons">
+                <a href="https://www.linkedin.com/in/angelica-parada/"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:langelica.parada@gmail.com"><i class="bi bi-envelope"></i></a>
+                <a href="https://github.com/angie-create"><i class="bi bi-github"></i></a>
+                <a href="https://dribbble.com/AngiePR"><i class="bi bi-dribbble"></i></a>
+                <a href="https://www.behance.net/lauraaparada"><i class="bi bi-behance"></i></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./nav.js"></script>
+    </body>
+</html>

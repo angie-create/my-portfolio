@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <a href="./index.html"><img class="logo" src="./img/Logo  AP.png" alt="Angelica Parada Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <a onclick="openNav()" class="menu" href="#"><button class="menuButton">Menu</button></a>
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="" class="close">&times;</a>
+                <div class="overlay-content">
+                    <a href="./index.html">Projects</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="headerSection">
+            <header>
+                <span>Creative UX/UI Designer</span>
+                <h1>Creating digital experiences that blend aesthetics with functionality</h1>
+                <p>I help brands elevate their digital presence with human-centered designs solutions that drive engagement results.</p>
+            </header>
+            <div class="buttons">
+                <a href="./contact.html"><button class="filledButton">Get in touch</button></a>
+                <a href="#selectedProjects"><button class="button">View Projects</button></a>
+            </div>
+            <div class="arrow"></div>
+        </div>
+        <main class="selectedProjects" id="selectedProjects">
+            <hgroup class="sectionTitle">
+                <h2>Selected Projects</h2>
+                <p>Explore a collection of my most recent design work.</p>
+            </hgroup>
+            <div class="projectsContainer">
+                <div class="Project">
+                    <picture>
+                        <img clas="projectImage" src="./img/ClaraAIScreens.png" alt="Clara AI mobile mock-up.">
+                    </picture>
+                    <div class="projectInfo">
+                        <h3>Clara AI</h3>
+                        <div class="projectTitle">
+                            <span>Branding | Prototyping | APP Design | UX/UI </span>
+                            <p>An app that enables people to visualize how outfits will look and fit on their bodies through AI technology.</p>
+                        </div>
+                        <a href="./claraai.html"><button class="button">View Case Study</button></a>
+                    </div>
+                </div>
+                <!-- <div class="Project">
+                    <img src="#" alt="Casa Tara website">
+                    <div class="projectInfo">
+                        <h3>Casa Tara</h3>
+                        <div class="projectTitle">
+                            <span>Branding | Web Design | UX/UI </span>
+                            <p>A website that brings the Casa Tara, Yoga Studio, experience to life, expanding its reach and attracting more people with online classes. </p>
+                        </div>
+                        <button class="button">View Design</button>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+        <section class="myServices">
+            <hgroup class="sectionTitle">
+                <h2>My Services</h2>
+                <p>I deliver comprehensive design solutions that transform ideas into impactful digital experiences.</p>
+            </hgroup>
+            <div class="servicesContainer">
+                <div class="service">
+                    <h4>UX/UI Design</h3>
+                    <p>Creating intuitive, user-centered interfaces that enhance engagement and user satisfaction</p>
+                </div>
+                <div class="service">
+                    <h4>Web Design</h3>
+                    <p>Building beautiful, responsive websites that look and perform flawlessly across all devices.</p>
+                </div>
+                <div class="service">
+                    <h4>Branding</h3>
+                    <p>Crafting authentic and impactful brand identities that connect with audiences and drive recognition.</p>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Ready to start your next project?</h2>
+            <p>Let's collaborate to create digital experiences that captive your audience and elevate your brand.</p>
+            <a href="./contact.html"><button class="button">Get in touch</button></a>
+        </section>
+        <footer>
+            <img class="logo" src="./img/Logo  AP.png" alt="">
+            <h4>Let's connect</h4>
+            <div class="socialIcons">
+                <a href="https://www.linkedin.com/in/angelica-parada/"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:langelica.parada@gmail.com"><i class="bi bi-envelope"></i></a>
+                <a href="https://github.com/angie-create"><i class="bi bi-github"></i></a>
+                <a href="https://dribbble.com/AngiePR"><i class="bi bi-dribbble"></i></a>
+                <a href="https://www.behance.net/lauraaparada"><i class="bi bi-behance"></i></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./nav.js"></script>
+    </body>
+</html>
