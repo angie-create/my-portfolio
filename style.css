@@ -641,9 +641,8 @@ img {
     .userCardContainer {
         height: 600px;
         width: 100%;
-        overflow: scroll;
-        align-items: flex-start;
+        overflow-y: auto;
+        scroll-behavior: smooth;
     }
-
 
 }
