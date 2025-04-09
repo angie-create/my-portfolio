@@ -115,7 +115,12 @@ span {
     border: none;
 }
 
-
+hgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-bottom: 1rem;
+}
 
 /* ------------------- NavBar -----------------------*/
 nav {
@@ -371,21 +376,54 @@ footer {
 }
 
 
-i {
+i, .footerInfo i {
 
     color: var(--gray);
     transition: all 0.3s;
 }
 
-i {
+i:hover, .footerInfo i:hover {
     size: scale(1.1);
     color: var(--black);
 }
 
+#desktop-footer {
+    display: none;
+}
+
+.footerInfo {
+    max-width: 15em;
+}
+
+.footerInfo h4, .footerInfo p {
+    text-align: left;
+    color: var(--gray);
+}
+
+.footerInfo p, .footerInfo li {
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.footerInfo li {
+    list-style-type: none;
+    transition: all 0.3s;
+}
+
+.footerInfo li:hover {
+    color: var(--black);
+    size: scale(1.1);
+}
+
+.footerInfo a {
+    text-decoration: none;
+
+}
+
+
 /* ------------------ Contact ------------------------------*/
 
 main {
-    height: 76vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -393,6 +431,7 @@ main {
     padding: 2rem;
     gap: 1rem;
 }
+
 
 .inputCard {
     background-color: var(--white);
@@ -491,12 +530,12 @@ label {
     
 }
 
-/* .hmw #signo1, .hmw #signo2 {
+
+.signo {
     color: var(--pink);
-    font-size: 6rem;
+    font-size: 3rem;
     font-family: "Noto Serif Display";
 }
-    */
 
 .theChallenge a {
     text-decoration: none;
@@ -510,6 +549,8 @@ label {
 .theSolution {
     min-height: 100vh;
     background-color: var(--black);
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -562,6 +603,10 @@ label {
     padding-top: 2rem;
 }
 
+.userFlowCard {
+    max-height: 574px;
+}
+
 .theProcess {
     background-color: var(--black);
     padding: 2rem;
@@ -579,6 +624,7 @@ label {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    max-height: 500px;
 }
 
 .understandingtheUser {
@@ -587,14 +633,20 @@ label {
     gap: 2rem;
 }
 
-.userCard {
-    max-height: 500px;
+
+#lo-fi {
+    background-color: var(--black);
+    border: var(--white) 1px solid;
 }
 
 .moodboard {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.claraStepsImg, hr {
+    display: none;
 }
 
 .moreProjects {
@@ -610,7 +662,7 @@ img {
 
 
 @media screen and (min-width: 40em) {
-    .servicesContainer, .Project, .userFlow .cardContainer {
+    .servicesContainer, .Project, .userFlow .cardContainer, .expertiseContainer {
         flex-direction: row;
     }
 
@@ -626,6 +678,7 @@ img {
         flex-direction: row-reverse;
     }
 
+
     .clara .projectDetailsInfo {
         width: 100%;
         flex-direction: row;
@@ -633,6 +686,29 @@ img {
         justify-content: space-between;
 
     }
+
+    #clara-mockups {
+        max-width: 800px;
+    }
+
+    #clara-intro {
+        max-width: 400px;
+    }
+
+    .theSolution {
+        flex-direction: row;
+    }
+
+    .moodboard {
+        width: 100vw;
+        height: auto;
+    }
+
+    /* .claraStepsImg, hr {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    } */
 
     .detailInfo {
         max-width: 15em;
@@ -643,6 +719,28 @@ img {
         width: 100%;
         overflow-y: auto;
         scroll-behavior: smooth;
+    }
+
+    #mobile-footer {
+        display: none;
+    }
+
+    #desktop-footer {
+        padding: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+    
+    input {
+        min-width: 40rem;
+    }
+
+    h1, p {
+        max-width: 750px;
     }
 
 }
