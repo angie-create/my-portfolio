@@ -54,7 +54,7 @@ p {
     color: var(--gray);
     text-align: center;
     font-weight: 300;
-    line-height: 120%;
+    line-height: 140%;
 }
 
 li {
@@ -275,7 +275,7 @@ header {
 .buttons {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 
@@ -295,7 +295,7 @@ header {
     
 }
 
-.selectedProjects h2, .selectedProjects p, .selectedProjects h3, .selectedProjects span, .cta h2, .cta p, .projectDetails h3, .projectDetails p, .projectDetails span, .solutionText h2, .solutionText P, .theProcess h2, .theProcess h3, .theProcess p {
+.selectedProjects h2, .selectedProjects p, .selectedProjects h3, .selectedProjects span, .cta h2, .cta p, .projectDetails h3, .projectDetails p, .projectDetails span, .solutionText h2, .solutionText P, .theProcess h2, .theProcess h3, .theProcess p, .aboutHeader h1, .aboutHeader p {
     color: var(--white);
 }
 
@@ -462,7 +462,32 @@ label {
 /* -------------------- About -----------------------*/
 
 .aboutHeader {
-    min-height: 100vh ;
+    min-height: 100vh;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+
+}
+
+#miFoto {
+    width: 100%;
+}
+
+#headerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutHeader p {
+    padding: 2rem;
 }
 
 .experience {
@@ -477,6 +502,10 @@ label {
     align-items: center;
     gap: 15px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.experience li {
+    list-style-type: none;
 }
 
 /* ------------------ Clara AI --------------------------*/
@@ -741,6 +770,27 @@ img {
 
     h1, p {
         max-width: 750px;
+    }
+
+    .aboutHeader {
+        min-height: 100vh;
+        background-image: url("./img/miFotoClara.png");
+        background-size: cover;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:center;
+    }
+
+    #miFoto {
+        display: none;
+    }
+
+    .aboutHeader h1, .aboutHeader p {
+        color: var(--black);
+    }
+
+    #headerText {
+        margin-left: 4rem;
     }
 
 }
