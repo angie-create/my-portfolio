@@ -295,7 +295,7 @@ header {
     
 }
 
-.selectedProjects h2, .selectedProjects p, .selectedProjects h3, .selectedProjects span, .cta h2, .cta p, .projectDetails h3, .projectDetails p, .projectDetails span, .solutionText h2, .solutionText P, .theProcess h2, .theProcess h3, .theProcess p, .aboutHeader h1, .aboutHeader p {
+.selectedProjects h2, .selectedProjects p, .selectedProjects h3, .selectedProjects span, .cta h2, .cta p, .projectDetails h3, .projectDetails p, .projectDetails span, .solutionText h2, .solutionText P, .theProcess h2, .theProcess h3, .theProcess p, .aboutHeader h1, .aboutHeader p, .userCardContainer h4 {
     color: var(--white);
 }
 
