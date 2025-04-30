@@ -8,6 +8,39 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
+    <script>
+        document.getElementById("formulario").addEventListener("submit", async function(e) {
+          e.preventDefault();
+        
+          const form = e.target;
+          const data = {
+            name: form.name.value,
+            email: form.email.value,
+            subject: form.subject.value,
+            message: form.message.value,
+          };
+        
+          try {
+            const response = await fetch("https://formspree.io/f/mzzrdyba", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            });
+        
+            if (response.ok) {
+              alert("Mensaje enviado con éxito. ¡Gracias!");
+              form.reset();
+            } else {
+              alert("Hubo un error al enviar el mensaje.");
+            }
+          } catch (error) {
+            console.error("Error al enviar:", error);
+            alert("Error de red o del servidor.");
+          }
+        });
+        </script>        
     <body>
         <nav>
             <div>
@@ -33,12 +66,12 @@
                 <h2>Get in Touch</h2>
                 <p>Have a project in mind or want to discuss a potential collaboration? I’d love to hear from you.</p>
             </hgroup>
-            <form action="https://formspree.io/f/mzzrdyba" method="post">
+            <form id="formulario" action="https://formspree.io/f/mzzrdyba" method="post">
                 <div class="inputCard">
-                    <label>Your name:<br /> <input type="text" required/></label><br/>
-                    <label>Your email:<br /> <input type="email"required/></label><br/>
-                    <label>Subject:<br /> <input type="text" required/></label><br/>
-                    <label>Message:<br /> <input id="message" type="text" required /></label>
+                    <label for="nombre" >Your name:<br /> <input type="text" name="nombre" id="nombre" required/></label><br/>
+                    <label for="email">Your email:<br /> <input type="email" name="email" id="email" required/></label><br/>
+                    <label for="subject">Subject:<br /> <input type="text" name="subject" id="subject" required/></label><br/>
+                    <label for="message">Message:<br /> <input id="message" name="message" type="text" required /></input>
                 </div>
                 <button type="submit" class="filledButton">Send Message</button>
             </form>
